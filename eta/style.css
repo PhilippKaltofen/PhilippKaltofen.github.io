@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  background: #fafafa;
+  transition: all 0.4s ease-out;
+}
+
+body {
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+canvas {
+	border-top: 30px solid #111;
+	border-bottom: 70px solid #111;
+	border-left: 10px solid #111;
+	border-right: 10px solid #111;
+	border-radius: 10px;
+
+	box-shadow: 0 0 10px #111;	
+  	transition: all 1s ease-in-out;
+}
+
+canvas:hover {
+	box-shadow: 0 0 20px #111;	
+  	transition: all 0.4s ease-out;
+}
