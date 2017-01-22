@@ -5,7 +5,9 @@ body, html {
 	padding: 0;
 	margin: 0;
 	background: #fafafa;
-	font-size: 1em;
+	font-size: 14px;
+	color: #999;
+	border-top: 5px solid #999;
 }
 
 * {
@@ -16,26 +18,30 @@ body, html {
 	clear: both;
 }
 
+.container {
+	width: 80%;
+	margin: auto;
+}
+
 header {
 	height: 60px;
-	width: 90%;
-	border: 1px solid #111;
-	margin: 5% 5%;
+	width: 100%;
+	margin: 16px 0;
 }
 
 .title {
 	width: 50%;
 	line-height: 60px;
 	float: left;
-	padding: 0 5%;
-	font-family: 'Lora';
-	font-size: 1.5em;
+	font-family: 'Raleway';
+	font-size: 1.3em;
+	font-weight: 700;
 }
 
 nav {
 	width: 45%;
 	line-height: 60px;
-	float: left;
+	float: right;
 }
 
 nav ul {
@@ -47,11 +53,61 @@ nav ul {
 nav ul li {	
 	width: 33%;
 	float: left;
-	text-align: center;
+	text-align: right;
 }
 
-.content {
-	padding: 0 10%;
+.grid {
+	padding: 0 0;
+}
+
+.grid_item {
+	float: left;
+	border: 1px solid #999;
+	margin: 4px;
+	overflow: hidden;
+}
+
+.grid_item:hover .grid_content {
+	margin-left: 0;
+	transition: all 0.4s;
+}
+
+.grid_content {
+	width: 100%;
+	height: 100%;
+	background: rgba(20, 20, 20, 0.3);
+	margin-left: 100%;	
+	transition: all 0.4s;
+	padding: 8px;
+	color: white;
+}
+
+.grid_title {
+	margin-top: 56px;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: 'Raleway';	
+	font-weight: 700;
+}
+
+.grid_content:active {
+	background: rgba(20, 20, 20, 0.4);	
+	transition: all 0.4s;
+}
+
+.grid_normal {
+	width: 168px;
+	height: 168px;
+}
+
+.grid_wide {
+	width: 344px;
+	height: 168px;
+}
+
+.grid_big {
+	width: 344px;
+	height: 344px;
 }
 
 a {
@@ -65,7 +121,7 @@ a:hover {
 }
 
 h1 {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', serif;
 	font-size: 1.5em;
 	font-weight: 400;
 	border-bottom: 1px solid #aaa;
@@ -73,7 +129,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', serif;
 	font-size: 1.3em;
 	font-weight: 400;	
 }
@@ -82,6 +138,24 @@ h2 {
 	list-style-type: circle;
 }
 
-@media (max-width: 600px) {
+.bg_eta {
+	background-image: url("../assets/images/eta-preview.png");
+}
 
+@media (min-width: 1000px) {
+	.container {
+		max-width: 704px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1004px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1232px;
+	}
 }
