@@ -7,7 +7,17 @@ body, html {
 	background: #fafafa;
 	font-size: 14px;
 	color: #999;
-	border-top: 5px solid #999;
+}
+
+html {
+	padding-top: 15px;
+}
+
+canvas {
+	width: 100%!important;
+	height: 15px!important;
+	position: absolute;
+	top: 0;
 }
 
 * {
