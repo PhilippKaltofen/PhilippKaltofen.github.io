@@ -189,9 +189,46 @@ h2 {
 	font-size: 1.3em;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 800px) {
 	.container {
 		max-width: 704px;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 80%;
+		margin: auto;
+	}
+
+	nav ul li {
+		width: 33%;
+		text-align: center;
+		padding: 0;
+	}
+
+	.grid_item {
+		margin:auto;
+		float: left;
+	}
+}
+
+@media (max-width: 640px) {
+	.container {
+		max-width: 344px;
+	}
+
+	.grid_item {
+		margin:auto;
+		float: left;
+	}
+
+	nav {
+		width: 344px;
 	}
 }
 
