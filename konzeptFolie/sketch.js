@@ -5,7 +5,7 @@ var fft;
 var hands;
 
 var setup = function(){
-    createCanvas(360, 620);
+    createCanvas(windowWidth, windowHeight);
     background(240);
     textFont("Nunito");
     noStroke();
