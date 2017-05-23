@@ -28,7 +28,7 @@ var setup = function(){
 }
 
 var draw = function(){
-    background(20);
+    background(240,240,240);
 
     for(var i = 0; i < hands.length; i++){
         hands[i].drawClappingHand();
