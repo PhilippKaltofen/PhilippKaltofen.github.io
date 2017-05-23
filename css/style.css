@@ -10,7 +10,6 @@ body, html {
 }
 
 html {
-	padding-top: 15px;
 }
 
 canvas {
@@ -34,6 +33,12 @@ canvas {
 	margin: auto;
 }
 
+.container_header {
+	background: #fff;
+	padding: 0 10%;
+	width: 100%;
+}
+
 header {
 	height: 60px;
 	width: 100%;
@@ -44,17 +49,22 @@ header {
 	width: 50%;
 	line-height: 60px;
 	float: left;
-	font-family: 'Raleway';
+	font-family: 'Montserrat';
 	font-size: 1.3em;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .title a {
 	border: 0;
 }
 
+.title a:hover b{
+	padding: 5px;
+	color: #999;
+}
+
 .title a:hover {
-	color: black;
+	color: #999;
 }
 
 nav {
@@ -91,18 +101,18 @@ nav a:hover li {
 }
 
 .grid_item:hover .grid_content {
-	margin-left: 0;
+	opacity: 1;
 	transition: all 0.4s;
 }
 
 .grid_content {
 	width: 100%;
 	height: 100%;
-	background: rgba(20, 20, 20, 0.3);
-	margin-left: 100%;	
+	background: rgba(255, 255, 255, 0.8);
+	opacity: 0;	
 	transition: all 0.4s;
 	padding: 8px;
-	color: white;
+	color: #111;
 }
 
 .grid_title {

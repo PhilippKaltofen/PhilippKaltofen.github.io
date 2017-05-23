@@ -12,10 +12,10 @@ var setup = function(){
 }
 
 var draw = function(){
-	background(250);
+	background(255);
 	for(var i = 0; i < points.length - 1; i++){
 		points[i].move();
-		fill(255, 200, 0, 100);
+		fill(20, 20, 20, 20);
 		beginShape();
 		vertex(points[i].position.x, 0);
 		vertex(points[i].position.x, points[i].position.y);
@@ -32,7 +32,7 @@ var p = function(x, y){
 	this.dir = 0.05;
 
 	this.drawP = function(){
-		fill(255, 200, 0);
+		fill(150, 150, 150);
 		ellipse(this.position.x, this.position.y, this.size, this.size);
 	}
 
